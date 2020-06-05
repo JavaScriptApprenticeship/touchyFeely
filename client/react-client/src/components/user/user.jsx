@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import superagent from 'superagent';
+import './user.styles.scss';
 
 class User extends React.Component {
     constructor(props){
@@ -31,7 +32,7 @@ class User extends React.Component {
 
     render() {
       return(
-        <div>
+        <div className='user-form-container'>
             <form onSubmit={this.handleSubmit}>
                 <input 
                 type='text' 
