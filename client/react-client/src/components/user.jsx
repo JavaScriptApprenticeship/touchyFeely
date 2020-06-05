@@ -7,7 +7,6 @@ class User extends React.Component {
         super(props);
         this.state = {
             name: '',
-            // moves: 0,
             keywords: '',
             view: false
         }
