@@ -15,9 +15,6 @@ const requestOptions = {
 };
 
   const client = new Twitter({
-    consumer_key: 'I0HORW2j8XV5bVf8SDz5ZJgYR',
-    consumer_secret: '8wBlRhm1TBnXGcSSHThCBofmyc1dJcdtMXNXNMpIS0XcY4aTFS',
-    bearer_token: 'AAAAAAAAAAAAAAAAAAAAAIq8EwEAAAAA1i3kkwKJ8V3zXpr5fmK%2Fr8FNEBg%3Dh09Ia3oP4QvHY7jaSjt7xEgMyfyOSVFa9tkZGvpVqk31LFcjI8'
   });
 
 const TwitterComponent = () => {
