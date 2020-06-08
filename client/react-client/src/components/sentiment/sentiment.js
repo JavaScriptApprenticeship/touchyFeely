@@ -1,15 +1,30 @@
 import React from 'react';
 
 import Sentiment from 'sentiment';
+import Emoji from '../emoji-component';
+import {tweets} from '../twitter/twitter2';
 
 const SentimentResult = () => {
 const sentiment = new Sentiment();
-const Result = sentiment.analyze('Cats are stupid and stupid and stupid. I hate cats. I think cats are nice i love to hate hate ');
+const Result = sentiment.analyze(tweets);
 console.dir(Result);
+const grinning = '😀';
+const frowning = '🙁';
+const neutral = '😐';
+
+const emojiScore = (result) => {
+  if(result < 4 && result > -4){
+    return neutral;
+    }
+    if(result > 4 ){
+      return grinning;
+    }
+    else return frowning;
+  }
 
 return(
     <div>
-        {Result.score}
+        <Emoji symbol={emojiScore(Result.score)}/>
     </div>
 )
 

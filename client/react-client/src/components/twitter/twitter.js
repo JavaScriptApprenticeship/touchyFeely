@@ -3,18 +3,21 @@ import Twitter from 'twitter';
 import './twitter.styles.scss';
 require('dotenv').config();
 
-// const client = new Twitter({
-//   consumer_key: process.env.TWITTER_CONSUMER_KEY,
-//   consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
-//   access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
-//   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
-// });
+const myHeaders = new Headers();
+myHeaders.append("Authorization", process.env.TWITTER_BEARER_TOKEN);
 
-const client = new Twitter({
+const requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow',
+  mode: 'no-cors',
+  credentials: 'include',
+};
+
+  const client = new Twitter({
     consumer_key: 'I0HORW2j8XV5bVf8SDz5ZJgYR',
     consumer_secret: '8wBlRhm1TBnXGcSSHThCBofmyc1dJcdtMXNXNMpIS0XcY4aTFS',
-    access_token_key: '1190083553184215040-SknuZKjnOjdFG5Luvzh4OxvkMrEmtE',
-    access_token_secret: 'X2wO2oGZObsz9equnnikhlE0nBJaORbqf1O2GQzFEROac'
+    bearer_token: 'AAAAAAAAAAAAAAAAAAAAAIq8EwEAAAAA1i3kkwKJ8V3zXpr5fmK%2Fr8FNEBg%3Dh09Ia3oP4QvHY7jaSjt7xEgMyfyOSVFa9tkZGvpVqk31LFcjI8'
   });
 
 const TwitterComponent = () => {
@@ -23,7 +26,7 @@ const TwitterComponent = () => {
 //     console.log(response);
 //  });
 
- client.get('favorites/list', function(error, tweets, response) {
+ client.get('https://api.twitter.com/1.1/search/tweets.json?q=Trump&src=typed_query', {requestOptions}, function(error, tweets, response) {
   if(error) throw error;
   console.log(tweets);  // The favorites.
   console.log(response);  // Raw response object.

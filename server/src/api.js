@@ -1,9 +1,9 @@
 'use strict';
-
+import Axios from 'axios';
 import express from 'express';
-const router = express.Router();
-
 import modelFinder from './models/model.js';
+
+const router = express.Router();
 router.param('model', modelFinder);
 
 let sendJSON = (res,data) => {
@@ -13,6 +13,21 @@ let sendJSON = (res,data) => {
   res.write( JSON.stringify(data) );
   res.end();
 };
+
+router.get('/searchTwitter/:query', (req, res)=> {
+  console.log('query:', req.params.query);
+  const config = {
+    headers: { Authorization: `Bearer AAAAAAAAAAAAAAAAAAAAAIq8EwEAAAAA1i3kkwKJ8V3zXpr5fmK%2Fr8FNEBg%3Dh09Ia3oP4QvHY7jaSjt7xEgMyfyOSVFa9tkZGvpVqk31LFcjI8` }
+};
+Axios.get( 
+  `https://api.twitter.com/1.1/search/tweets.json?q=${req.params.query}&src=typed_query`,
+  config
+).then(result => {
+      console.log("hello2??")
+      res.json(result.data)
+})
+  .catch(error => res.send(error));
+})
 
 router.get('/', (req,res) => {
   res.statusCode = 200;
