@@ -23,7 +23,6 @@ Axios.get(
   `https://api.twitter.com/1.1/search/tweets.json?q=${req.params.query}&src=typed_query`,
   config
 ).then(result => {
-      console.log("hello2??")
       res.json(result.data)
 })
   .catch(error => res.send(error));
@@ -32,7 +31,7 @@ Axios.get(
 router.get('/', (req,res) => {
   res.statusCode = 200;
   res.statusMessage = 'OK';
-  res.write(`Hello, welcome to my Memory Game`);
+  res.write(`Hello`);
   res.end();
 });
 

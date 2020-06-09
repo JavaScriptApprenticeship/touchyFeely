@@ -1,12 +1,12 @@
 import React from 'react';
 
 import Sentiment from 'sentiment';
-import Emoji from '../emoji-component';
-import {tweets} from '../twitter/twitter2';
+import Emoji from '../emoji/emoji-component';
 
-const SentimentResult = () => {
+const SentimentResult = ({keywords}) => {
+   // console.log(keyword);
 const sentiment = new Sentiment();
-const Result = sentiment.analyze(tweets);
+const Result = sentiment.analyze(keywords);
 console.dir(Result);
 const grinning = '😀';
 const frowning = '🙁';
@@ -24,6 +24,7 @@ const emojiScore = (result) => {
 
 return(
     <div>
+        <h3>{`The resulting score is ${Result.score}`}</h3>
         <Emoji symbol={emojiScore(Result.score)}/>
     </div>
 )
