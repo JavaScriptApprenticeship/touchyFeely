@@ -8,11 +8,21 @@ const neutral = '😐';
     if(result < 4 && result > -4){
       return neutral;
       }
-      if(result > 4 ){
+    if(result > 4 ){
+      if(result > 15){
         return grinning;
       }
-      else return frowning;
+      else {
+        return smile;
+      }
     }
+    else if(result < -15){
+      return frowning;
+    }
+    else {
+      return sad;
+    }
+  }
 
     export const emojiGScore = (score,magnitude) => {
       if(score > 0.25) {

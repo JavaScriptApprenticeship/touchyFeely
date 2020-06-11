@@ -21,8 +21,8 @@ class ResultsPage extends Component {
         const {users} = this.state;
         return(
             <div className='results-container'>
-                <h2>Here are your results for:</h2>
-                {users.length && <h2>Your keyword: {users[users.length -1].keywords}</h2>}
+                {/* <h2></h2> */}
+                {users.length && <h2>Here are the results for your keyword: {users[users.length -1].keywords}</h2>}
                 {users.length && <TwitterSearch
                   keyword={users[users.length -1].keywords}/>}
             </div>
