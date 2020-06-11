@@ -16,7 +16,7 @@ const neutral = '😐';
         return smile;
       }
     }
-    else if(result < -15){
+    else if(result > -15){
       return frowning;
     }
     else {
@@ -26,7 +26,7 @@ const neutral = '😐';
 
     export const emojiGScore = (score,magnitude) => {
       if(score > 0.25) {
-         if(score > 0.5 || magnitude > 1){
+         if(score > 0.6 || magnitude > 1){
              return grinning;
          }
          else {
@@ -34,7 +34,7 @@ const neutral = '😐';
          }
       }
       if(score < -0.25) {
-         if(score < -0.5 || magnitude > 1) {
+         if(score < -0.6 || magnitude > 1) {
              return sad;
          }
          else {
