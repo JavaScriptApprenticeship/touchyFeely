@@ -47,7 +47,7 @@ class User extends React.Component {
                 type='text' 
                 name='keywords' 
                 value={this.keywords}
-                placeholder='enter keywords separated by a comma'
+                placeholder='enter keywords'
                 onChange={this.handleChange}
                 />
                 <button type="submit" >submit</button>
@@ -58,9 +58,8 @@ class User extends React.Component {
             <h2>{this.state.name}</h2>
             <h2>{this.state.keywords}</h2>
         </div>
-    )
-}
-
+        )
+    }
 }
 
 export default User;

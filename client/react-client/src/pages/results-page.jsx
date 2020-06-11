@@ -19,7 +19,6 @@ class ResultsPage extends Component {
  
     render(){
         const {users} = this.state;
-        // console.log('users: ',users)
         return(
             <div className='results-container'>
                 <h2>Here are your results for:</h2>

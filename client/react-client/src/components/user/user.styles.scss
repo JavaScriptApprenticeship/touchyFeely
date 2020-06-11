@@ -17,26 +17,12 @@
           border-radius: 3px;
           font-family: "Trebuchet MS", Helvetica, sans-serif;
       }
-        /*
-        body:{
-            font: 100% $font-stack;
-            color: $tertiary-color;
-            background-color: $primary-color;
-            padding: .875em 1.875em 1.875em;
-            border: 2px solid #ffff4d;
-            border-radius: 3px;
-            font-style: bold;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            text-align: center;
-            
-        }
-        */
 
     button {
         color: $tertiary-color;
         padding: .55em 1.25em;
         background: $point-color2;
-        margin: 1.25em 0 .5em;
+        margin: 1.25em 0 .5em 1em;
         cursor: pointer;
         border: 2px solid $point-color;
         border-radius: 4px;

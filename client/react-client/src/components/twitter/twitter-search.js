@@ -1,8 +1,8 @@
 import React from 'react';
 import Axios from 'axios';
-import superagent from 'superagent';
-
+//import superagent from 'superagent';
 import SentimentResult from '../sentiment/sentiment';
+//import SentimentResult from '../sentiment/animeStyledSentiment';
 import AnalyzerResult from '../analyzer/analyzer-search';
 class TwitterSearch extends React.Component{
 constructor(props){
@@ -19,21 +19,20 @@ constructor(props){
     console.log('this.state.keyword:', keyword)
     Axios.get(`http://localhost:3021/searchTwitter/${keyword}`)
       .then(result => {
-          const twit = result.data.statuses.map(obj => obj.text).join(',')
+          const twit = result.data.statuses.map(obj => obj.text).join(' ')
           const twitLocation = result.data.statuses.map(obj => obj.user.location).join(',')
         this.setState({twit, twitLocation})
         });
-
-        superagent.post('http://localhost:3021/api/v1/user')
-        .send({"twitResult": this.state.twit})
-        .then(res => {
-           return res;
-        })
+    // for posting to DB, not using yet
+        // superagent.post('http://localhost:3021/api/v1/user')
+        // .send({"twitResult": this.state.twit})
+        // .then(res => {
+        //    return res;
+        // })
  }
  render(){
-     const {twit, twitLocation} = this.state;
+     const {twit} = this.state;
      console.log(twit);
-     console.log('location',twitLocation)
     return(
         <div className='twitter-div'>
             {twit && <SentimentResult keywords={twit}/>}

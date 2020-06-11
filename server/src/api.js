@@ -3,7 +3,6 @@ import Axios from 'axios';
 import express from 'express';
 import modelFinder from './models/model.js';
 import analyzeSentimentOfText from '../dialog';
-// import DataModel from './models/dataModel';
 
 const router = express.Router();
 router.param('model', modelFinder);
@@ -35,7 +34,7 @@ router.get('/api/v1/analyzer/:keywords', async (req, res) => {
   const {keywords} = req.params;
   // call the dialog function
   const results = await analyzeSentimentOfText(keywords);
-  console.log("api results",results)
+  console.log("api results:   ",results)
   res.json({results})
 })
 
@@ -58,9 +57,6 @@ router.get('/api/v1/:model/:id', (req,res,next) => {
     .then( data => sendJSON(res,data) )
     .catch( next );
 });
-// router.post('/api/v1/:model', (req,res,next) => {
-// res.send('dawn');
-// });
 
 router.post('/api/v1/:model', (req,res,next) => {
   let record = new req.model(req.body);

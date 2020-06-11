@@ -1,8 +1,8 @@
 import React from 'react';
-
+// import anime from 'animejs/lib/anime.es.js';
 import Sentiment from 'sentiment';
 import Emoji from '../emoji/emoji-component';
-import emojiScore from '../emoji/emoji-score';
+import {emojiScore} from '../emoji/emoji-score';
 import './sentiment.styles.scss';
 
 //new styles
@@ -69,21 +69,21 @@ anime.timeline({loop: true})
         'padding': '.875em 1.875em 1.875em',
         'background': '#8585ad',
         'border': '2px solid #ffff4d',
-        'border-radius': '3px',
-        'font-style': 'bold',
-        'font-family': '"Trebuchet MS", Helvetica, sans-serif',
+        'borderRadius': '3px',
+        'fontStyle': 'bold',
+        'fontFamily': '"Trebuchet MS", Helvetica, sans-serif',
         'position': 'relative',
-        'font-weight': '900',
-        'font-size': '4.5em'
+        'fontWeight': '900',
+        'fontSize': '4.5em'
     },
-    // letters:{
-    //     'position': 'absolute',
-    //     'margin': 'auto',
-    //     'left': '0',
-    //     'top': '0.3em',
-    //     'right': '0',
-    //     'opacity': '0' 
-    //     }
+    letters:{
+        'position': 'absolute',
+        'margin': 'auto',
+        'left': '0',
+        'top': '0.3em',
+        'right': '0',
+        'opacity': '0' 
+        }
 }
 
 
@@ -100,7 +100,7 @@ class SentimentResult extends React.Component {
 }
 
   render(){
-    const {keywords} = this.state;
+    const {keywords} = this.state.keywords;
     const sentiment = new Sentiment();
     const Result = sentiment.analyze(keywords);
     console.dir(Result);

@@ -13,7 +13,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Our API Routes
+// API Routes
 app.use(router);
 
 let server;
