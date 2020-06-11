@@ -1,12 +1,3 @@
 {
   "type": "service_account",
-  "project_id": "riot-sentiment-bctmik",
-  "private_key_id": "90bb00b89dde5f6f33de4ec8f15d96693928f194",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCekXjvXM+HYIDj\nDmwvyaluQs1qy7OSACbSfqD17vRSyBZ8Lxh4A9Gx4+r9Oi9w5qBSe+NBrU8gUepS\nj6tt0SdrFpNSOyVEhFUS9IjQJSAkNVyvImG2pU9glsKIZQ6sMvH/ceV2cAQGljRd\nQKT+eJBqLNkbq3mgxF4Cc7pczJwi+XVjDEPb9ytqrZQCvbRUrTrGw6W0l/9MpVQw\nM/ePFH3FwE7UPy0/C9XrT4CUNPBnyO40zRJynysbO8GnsaQFECk+XQm/sBexkMxa\nzQMwCUwuUB5jJas9XB+rk5wG45KuQAnzehC5vpwdY9nvMC1/te/hxc7ux7YSz1uB\nk8NFTuXdAgMBAAECggEAK6VRC1mZieLHNzhGERVJ/J6Imie9oqdGCFRwi6EdQRfw\nEHiKHKa4dmWMzezRGBty76FIGVDR4cyKWfVPs2eJmRFatZywEl72Z8RFUD2Xzj+d\n5lrpWHPCGI0GuLJQSpevQqegCGymvwVjHnPntl+LKJ51mAcn8Fd8pOIj3t028O0Y\nHe1reuWGTsHbbutaqy6i+ALguHQtO+WwZp05Bm7pUxuIjAI1AuB0GLy2rgPF4mFE\n97uGBWzRcoLv968gRi78os6l9z9MijCkDEaQKvo0L+oG88YvjYtKjalqVjlS8mpR\njuLQGbxnb7tP/tT24Mfv/L62LydlhDb0notBjOUe5QKBgQDSLS02+NXgD9JRuujX\nZArhkCBWLs0bhOdMWM44LhtkrdZpuqunsqO6ALGShZGMoXv9pdo+MNznREqEflkd\nydkqdyN8Ccnl4IulEUtOXtncRNIjyUY2ozcQqR75sonEYdRbCWApdC5ygby3qS0y\nPAnFi15Q4UqdZ+QSSQ8Dlk1rnwKBgQDBI9OJB53DzuI1xFJ2o+WDvG/0m3qDgRWE\nT321OPt8Uebra+7QrUvBPpOMzo6r76NcXvlyI0N+jyusL9DXGqfnuFHaQsYyIs2T\nhtVjG/DScRpQZ9FNS6sJ+Oe6GvcdrNVwQZYbfRKxear4LfUpwlzIFIvAq1xN9k/K\n2lE7fOZ9AwKBgH9BrUvIlK7qxXyJACxSPahffMTR54yPBwEaEBrCCAIIo3c2+HI8\nXpfjjaDa0Mrmh82Hm0HmkgpRNhFM8yZvLddhdZHH14AhWkwi0YbtNVoCLX5PgvzY\nDCJBVCj56iKG3W4VmizfVLQuS5akj2IIKh57CStNjcEKw3Qy2i1g1xWfAoGAEFLZ\n1xQItnruzYKJQbO6ezba836MjT7EtckOI9nsD2bQsIcPyR1McMm8KMNwdYGseesh\nBA+M7c5l74ifCv8av8/pQxwvqh8c5uIXeOfso6yhf7g2jWTe0Nnzo9wRlLV92J4C\ndNJOWSeiVpVzyhK+Sr7JzP/urjwqJEftY6y7wkcCgYBejuS3ktszosI1zVzuPpNo\no2oWxZObWnLUexL8x57w94UDjlNp5Ty4QNtCuIhkl55fsZozvXQEOoN3yD8KZFK8\nknDL0Z7kkF0kvT4zqaPdd5hhuwvkVsYrUNf4YLz249lrP11tAG0vnizlEkVwJsm2\nyZVtRytbS9I1pPX6g5evKA==\n-----END PRIVATE KEY-----\n",
-  "client_email": "riot-sentiment-bctmik@appspot.gserviceaccount.com",
-  "client_id": "103064589660078414812",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/riot-sentiment-bctmik%40appspot.gserviceaccount.com"
-}
+//removed private key and token data
