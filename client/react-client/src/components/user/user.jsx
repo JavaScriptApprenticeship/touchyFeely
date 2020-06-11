@@ -1,14 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import superagent from 'superagent';
+import './user.styles.scss';
 
 class User extends React.Component {
     constructor(props){
         super(props);
         this.state = {
             name: '',
-            // moves: 0,
             keywords: '',
+            location: '',
             view: false
         }
     }
@@ -32,7 +33,7 @@ class User extends React.Component {
 
     render() {
       return(
-        <div>
+        <div className='user-form-container'>
             <form onSubmit={this.handleSubmit}>
                 <input 
                 type='text' 
@@ -46,7 +47,7 @@ class User extends React.Component {
                 type='text' 
                 name='keywords' 
                 value={this.keywords}
-                placeholder='enter keywords separated by a comma'
+                placeholder='enter keywords'
                 onChange={this.handleChange}
                 />
                 <button type="submit" >submit</button>
@@ -57,9 +58,8 @@ class User extends React.Component {
             <h2>{this.state.name}</h2>
             <h2>{this.state.keywords}</h2>
         </div>
-    )
-}
-
+        )
+    }
 }
 
 export default User;

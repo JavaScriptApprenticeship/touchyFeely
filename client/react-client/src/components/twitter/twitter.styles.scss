@@ -1,0 +1,17 @@
+$font-stack:    "Trebuchet MS", Helvetica, sans-serif;
+$primary-color: #000033;
+$secondary-color: #8585ad;
+$tertiary-color: #f2e6ff;
+$point-color: #ffff4d;
+$point-color2: #2d1006;
+
+.twitter-div {
+    background-color: $tertiary-color;
+    color: $primary-color;
+    padding: .875em 1.875em 1.875em;
+    background: $secondary-color;
+    border: 2px solid $point-color;
+    border-radius: 3px;
+    font-style: bold;
+    font-family: $font-stack;
+}

@@ -6,7 +6,7 @@ const models = requireAll('../models');
 export default (req,res,next) => {
   try {
     let model = req && req.params && req.params.model;
-
+    //console.log('try models', model, models);
     if (model && models[model] && models[model].default) {
       req.model = models[model].default;
       next();

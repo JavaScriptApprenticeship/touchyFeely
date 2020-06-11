@@ -1,0 +1,33 @@
+.user-form-container {
+    $font-stack: 'Nunito', sans-serif;;
+    $primary-color: #000033;
+    $secondary-color: #8585ad;
+    $tertiary-color: #f2e6ff;
+    $point-color: #ffff4d;
+    $point-color2: #2d1006;
+
+
+    text-align: center;
+
+      form {
+        color: $point-color2;
+        padding: .875em 1.875em 1.875em;
+          background: $secondary-color;
+          border: 2px solid $point-color;
+          border-radius: 3px;
+          font-family: "Trebuchet MS", Helvetica, sans-serif;
+      }
+
+    button {
+        color: $tertiary-color;
+        padding: .55em 1.25em;
+        background: $point-color2;
+        margin: 1.25em 0 .5em 1em;
+        cursor: pointer;
+        border: 2px solid $point-color;
+        border-radius: 4px;
+        transition: all 0.5s;
+        font-family: 'Nunito', sans-serif;
+    }
+}
+

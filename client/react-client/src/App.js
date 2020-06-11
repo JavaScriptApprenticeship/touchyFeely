@@ -9,6 +9,7 @@ class App extends React.Component {
   return (
     <div className="App">
       <h1>Touchy Feely</h1>
+
       <Router>
         <Switch>
           <Route exact path='/' component={HomePage} />

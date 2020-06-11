@@ -1,0 +1,23 @@
+
+.sentiment-container {
+    color: '#000033';
+    padding: '.875em 1.875em 1.875em';
+    background: '#8585ad';
+    border: '2px solid #ffff4d';
+    border-radius: '3px';
+    font-style: 'bold';
+    font-family: '"Trebuchet MS", Helvetica, sans-serif'
+}
+.ml4 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5em;
+  }
+  .ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
+  }
