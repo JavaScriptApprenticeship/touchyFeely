@@ -1,3 +1,22 @@
 .twitter-div {
-    background-color: lightpink;
+    $font-stack:    "Trebuchet MS", Helvetica, sans-serif;
+    $primary-color: #000033;
+    $secondary-color: #8585ad;
+    $tertiary-color: #f2e6ff;
+    $point-color: #ffff4d;
+    $point-color2: #2d1006;
+    background-color: $tertiary-color;
+
+    // body {
+    font: 100% $font-stack;
+    color: $primary-color;
+    padding: .875em 1.875em 1.875em;
+    background: #8585ad;
+    border: 2px solid #ffff4d;
+    border-radius: 3px;
+    font-style: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
+    // }
+
 }

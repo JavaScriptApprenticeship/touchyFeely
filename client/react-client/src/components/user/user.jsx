@@ -9,6 +9,7 @@ class User extends React.Component {
         this.state = {
             name: '',
             keywords: '',
+            location: '',
             view: false
         }
     }
