@@ -17,7 +17,7 @@ let sendJSON = (res,data) => {
 router.get('/searchTwitter/:query', (req, res)=> {
   console.log('query:', req.params.query);
   const config = {
-    headers: { Authorization: `Bearer AAAAAAAAAAAAAAAAAAAAAIq8EwEAAAAA1i3kkwKJ8V3zXpr5fmK%2Fr8FNEBg%3Dh09Ia3oP4QvHY7jaSjt7xEgMyfyOSVFa9tkZGvpVqk31LFcjI8` }
+    headers: { Authorization: `Bearer TWITTER_BEARER_TOKEN` }
 };
 Axios.get( 
   `https://api.twitter.com/1.1/search/tweets.json?q=${req.params.query}&src=typed_query`,
